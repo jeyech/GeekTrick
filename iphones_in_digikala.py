@@ -13,7 +13,7 @@ ip = soup.find_all('div' ,attrs = {'class':'c-product-box__content'})
 d = open("iphones_output_file.csv","w")
 
 for phone in ip: 
-    d.write(re.sub(r'\s+',' ',phone.text))
+    d.write(re.sub(r'\s+',' ',ip.text))
     d.write('\n')
 
 d.close()
